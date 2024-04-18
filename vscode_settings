@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Hack The Box",
+    "editor.fontSize": 15,
+    "editor.wordWrap": "on",
+    "notebook.output.scrolling": true,
+    "workbench.startupEditor": "none", 
+    "explorer.compactFolders": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "python": "clear ; python -u",
+    },
+    "code-runner.ignoreSelection": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+}
