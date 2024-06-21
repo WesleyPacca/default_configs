@@ -133,3 +133,4 @@ function lb() { Get-ChildItem | Format-List }
 ```
 Se ao abrir o terminal, você obter a mensagem abaixo, execute ```fix_ps```
 
+![image](https://github.com/WesleyPacca/default_configs/assets/146728038/917a0d41-e0e6-4fe9-8b46-83eed917edb9)
