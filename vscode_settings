@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Hack The Box",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "editor.fontSize": 15,
     "editor.wordWrap": "on",
     "notebook.output.scrolling": true,
@@ -13,4 +13,6 @@
     "code-runner.ignoreSelection": true,
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "'MesloLGS Nerd Font', 'Courier New', monospace",
 }
