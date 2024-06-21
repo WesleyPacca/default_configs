@@ -8,11 +8,11 @@
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {
-        "python": "clear ; python -u",
+        "python": "clear ; python -u"
     },
     "code-runner.ignoreSelection": true,
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.fontFamily": "'MesloLGS Nerd Font', 'Courier New', monospace",
+    "editor.fontFamily": "'MesloLGS Nerd Font', 'Courier New', monospace"
 }

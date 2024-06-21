@@ -1,0 +1,92 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "final_space": true,
+    "version": 2,
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "python",
+                    "style": "plain",
+                    "foreground": "#00ffff",
+                    "properties": {
+                        "home_enabled": true,
+                        "display_mode": "always"
+                    },
+                    "template": "\n{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}.venv|{{ end }}{{ end }}"
+                },
+                {
+                    "type": "python",
+                    "style": "plain",
+                    "powerline_symbol": "",
+                    "foreground": "#0077ff",
+                    "properties": {
+                        "home_enabled": true,
+                        "display_mode": "always"
+                    },
+                    "template": " {{ .Full }}| "
+                },
+                {
+                    "type": "session",
+                    "style": "diamond",
+                    "foreground": "#81ff5b",
+                    "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }} in"
+                  },
+                {
+                "type": "path",
+                "style": "plain",
+                "powerline_symbol": "",
+                "foreground": "#ffffff",
+                "properties": {
+                    "style": "full"
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "foreground": "#d0ff00",
+                    "template": "on {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }}",
+                    "properties": {
+                        "fetch_status": true,
+                        "fetch_upstream_icon": true,
+                        "untracked_modes": {
+                        "/Users/user/Projects/oh-my-posh/": "no"
+                        }
+                    }
+                },
+                {
+                "type": "executiontime",
+                "style": "powerline",
+                "foreground": "#ffffff",
+                "template": " <#fefefe></> {{ .FormattedMs }} ",
+                "properties": {
+                    "threshold": 500,
+                    "style": "roundrock",
+                    "always_enabled": true
+                }
+            }]
+        },
+        {
+            "type": "prompt",
+            "newline": true,
+            "alignment": "left",
+            "segments": [
+                {
+                "type": "status",
+                "style": "diamond",
+                "foreground": "#7cff3f",
+                "foreground_templates": [
+                    "{{ if .Error }}#e91e63{{ end }}"
+                ],
+                "template": "{{ if eq .Code 0 }}❯{{ else }}❯{{ end }}",
+                "properties": {
+                    "always_enabled": true
+                    }  
+                }
+            ]
+        }
+        
+    ]
+}
